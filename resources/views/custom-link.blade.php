@@ -1,5 +1,5 @@
 @extends('app')
-@section('title', 'Custom-Link')
+@section('title', 'CodeGraphi-Custom-Link')
 @section('custom-link')
     <div class="w-full md:w-4/5 bg-gray-100 p-8 md:ml-64">
 

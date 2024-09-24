@@ -1,5 +1,5 @@
 @extends('app')
-@section('title', 'Subscription')
+@section('title', 'CodeGraphi-Subscription')
 @section('subscription')
     
 

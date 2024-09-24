@@ -1,6 +1,6 @@
 
    @extends('app')
-   @section('title', 'Admin Profile')
+   @section('title', 'CodeGraphi-Admin Profile')
    @section('profile')
        
   

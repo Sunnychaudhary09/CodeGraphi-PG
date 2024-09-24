@@ -1,5 +1,5 @@
 @extends('app')
-@section('title', 'Settlement')
+@section('title', 'CodeGraphi-Settlement')
 @section('settlement')
     
 
@@ -30,9 +30,9 @@
         </table>
     </div>
 
-    <div class="mt-4">
+    {{-- <div class="mt-4">
         <button class="bg-green-500 text-white py-2 px-4 rounded-lg" onclick="simulatePayment()">Simulate Payment</button>
-    </div>
+    </div> --}}
 
     <!-- Settlement History Section -->
     <h4 class="font-bold mt-6 mb-2 border-b border-solid border-slate-300">Settlement History</h4>
@@ -73,46 +73,62 @@
             });
         }
 
-        function simulatePayment() {
-            // Simulate adding a new transaction
-            const transactionId = Math.floor(Math.random() * 100000);
-            const amount = (Math.random() * 1000).toFixed(2);
-            const settlementDate = new Date().toLocaleDateString();
-            const utrNumber = 'UTR' + Math.floor(Math.random() * 10000000);
+        // function simulatePayment() {
+        //     // Simulate adding a new transaction
+        //     const transactionId = Math.floor(Math.random() * 100000);
+        //     const amount = (Math.random() * 1000).toFixed(2);
+        //     const settlementDate = new Date().toLocaleDateString();
+        //     const utrNumber = 'UTR' + Math.floor(Math.random() * 10000000);
 
-            const row = `
-                <tr>
-                    <td class="border px-4 py-2">${transactionId}</td>
-                    <td class="border px-4 py-2">${amount}</td>
-                    <td class="border px-4 py-2">${settlementDate}</td>
-                    <td class="border px-4 py-2">${utrNumber}</td>
-                    <td class="border px-4 py-2"><button class="bg-blue-500 text-white py-1 px-2 rounded-lg">Settle</button></td>
-                </tr>
-            `;
+        //     const row = `
+        //         <tr>
+        //             <td class="border px-4 py-2">${transactionId}</td>
+        //             <td class="border px-4 py-2">${amount}</td>
+        //             <td class="border px-4 py-2">${settlementDate}</td>
+        //             <td class="border px-4 py-2">${utrNumber}</td>
+        //             <td class="border px-4 py-2"><button class="bg-blue-500 text-white py-1 px-2 rounded-lg">Settle</button></td>
+        //         </tr>
+        //     `;
 
-            document.getElementById('transactionTableBody').insertAdjacentHTML('beforeend', row);
+        //     document.getElementById('transactionTableBody').insertAdjacentHTML('beforeend', row);
 
-            // Add to Settlement History
-            const historyItem = `<li>Transaction ID ${transactionId} settled on ${settlementDate} with UTR ${utrNumber}</li>`;
-            document.getElementById('settlementHistory').insertAdjacentHTML('beforeend', historyItem);
-        }
+        //     // Add to Settlement History
+        //     const historyItem = `<li>Transaction ID ${transactionId} settled on ${settlementDate} with UTR ${utrNumber}</li>`;
+        //     document.getElementById('settlementHistory').insertAdjacentHTML('beforeend', historyItem);
+        // }
+        // Array to store the settled transaction IDs
+const settledTransactions = new Set();
+//const settlementHistory = [];
 
-        function processSettlement(transactionId, amount, date, utr) {
-            const historyEntry = `Transaction ID: ${transactionId}, Amount: ${amount}, Date: ${date}, UTR: ${utr}`;
-            settlementHistory.push(historyEntry);
-            updateSettlementHistory();
-        }
+function processSettlement(transactionId, amount, date, utr) {
+    // Check if the transaction ID is already settled
+    if (settledTransactions.has(transactionId)) {
+        alert("Transaction already settled!");
+        return; // Exit the function if already settled
+    }
 
-        function updateSettlementHistory() {
-            const historyList = document.getElementById("settlementHistory");
-            historyList.innerHTML = ""; // Clear previous history
+    // If not settled, process the settlement
+    const historyEntry = `Transaction ID: ${transactionId}, Amount: ${amount}, Date: ${date}, UTR: ${utr}`;
+    settlementHistory.push(historyEntry);
 
-            settlementHistory.forEach(entry => {
-                const li = document.createElement("li");
-                li.textContent = entry;
-                historyList.appendChild(li);
-            });
-        }
+    // Mark the transaction as settled by adding its ID to the set
+    settledTransactions.add(transactionId);
+
+    // Update the settlement history display
+    updateSettlementHistory();
+}
+
+function updateSettlementHistory() {
+    const historyList = document.getElementById("settlementHistory");
+    historyList.innerHTML = ""; // Clear previous history
+
+    settlementHistory.forEach(entry => {
+        const li = document.createElement("li");
+        li.textContent = entry;
+        historyList.appendChild(li);
+    });
+}
+
 
         // Populate the table when the page loads
         window.onload = populateTransactionTable;

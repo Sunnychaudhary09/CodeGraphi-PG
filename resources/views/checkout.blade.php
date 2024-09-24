@@ -1,7 +1,7 @@
 
     
  @extends('app') 
- @section('title', 'checkout-setting')
+ @section('title', 'CodeGraphi-checkout-setting')
  @section('checkout')
  
  
