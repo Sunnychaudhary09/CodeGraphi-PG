@@ -1,5 +1,6 @@
 
    @extends('app')
+   @section('title', 'Admin Profile')
    @section('profile')
        
   

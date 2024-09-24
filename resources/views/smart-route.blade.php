@@ -1,4 +1,5 @@
 @extends('app')
+@section('title', 'Smart-Route')
 @section('smart-route')
     
 

@@ -1,4 +1,5 @@
 @extends('app')
+@section('title', 'Developer section')
 @section('developer')
     
 

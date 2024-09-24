@@ -1,4 +1,5 @@
 @extends('app')
+@section('title', 'CodeGraphi-Transactions')
 @section('transaction')
     
 
@@ -78,7 +79,7 @@
     let currentIndex = 0; // Current index for navigation
 
     // Sample data for demonstration (you can replace this with real data)
-    for (let i = 1; i <= 25; i++) {
+    for (let i = 1; i <= 100; i++) {
         transactions.push({
             date: `2024-09-${i < 10 ? '0' + i : i}`,
             time: '12:00',
@@ -95,8 +96,11 @@
             document.getElementById("noTransactions").classList.remove("hidden");
             document.getElementById("prevButton").disabled = true;
             document.getElementById("nextButton").disabled = true;
+            document.getElementById("prevButton").classList.add("hidden");
+            document.getElementById("nextButton").classList.add("hidden");
         } else {
             document.getElementById("noTransactions").classList.add("hidden");
+           
 
             // Calculate the start and end index for the current page
             const startIndex = currentIndex * entriesPerPage;

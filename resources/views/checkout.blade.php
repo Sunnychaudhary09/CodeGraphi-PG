@@ -1,8 +1,9 @@
 
     
  @extends('app') 
+ @section('title', 'checkout-setting')
  @section('checkout')
- @section('title', 'checkout-setting')  
+ 
  
 
 <div class="w-full md:w-4/5 bg-gray-100 p-8 md:ml-64">

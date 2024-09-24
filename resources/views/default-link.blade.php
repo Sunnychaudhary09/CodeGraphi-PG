@@ -1,4 +1,5 @@
 @extends('app')
+@section('title', 'Codegraphi-Default link')
 @section('default-link')
     
 

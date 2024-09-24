@@ -1,5 +1,6 @@
 
 @extends('app')
+@section('title', 'Codegraphi-Dashboard')
 @section('dashboard')
     
     <!-- Main Content -->
