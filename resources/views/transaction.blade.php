@@ -60,8 +60,8 @@
                 
             </table>
             <div class="flex justify-between mt-6">
-                    <button type="button" class="bg-blue-500 text-white py-2 px-4 rounded-lg" onclick="previousTransaction()" disabled id="prevButton">Previous</button>
-                    <button type="button" class="bg-blue-500 text-white py-2 px-4 rounded-lg" onclick="nextTransaction()" disabled id="nextButton">Next</button>
+                    <button type="button" class="button text-white py-2 px-4 rounded-lg" onclick="previousTransaction()" disabled id="prevButton">Previous</button>
+                    <button type="button" class="button text-white py-2 px-4 rounded-lg" onclick="nextTransaction()" disabled id="nextButton">Next</button>
                 </div>
             <div id="noTransactions" class="text-center hidden mt-4">
                 <p class="text-gray-400 text-xl">No transactions found</p>

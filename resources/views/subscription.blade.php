@@ -27,7 +27,7 @@
                     <li>✔ Unlimited NEFT / IMPS</li>
                     <li>✔ 30 Days</li>
                 </ul>
-                <button class="mt-6 w-full bg-purple-600 text-white py-2 rounded-lg">Select Plan</button>
+                <button class="mt-6 w-full button text-white py-2 rounded-lg">Select Plan</button>
             </div>
 
             <!-- Enterprise Plan -->
@@ -43,7 +43,7 @@
                     <li>✔ Unlimited NEFT / IMPS</li>
                     <li>✔ 30 Days</li>
                 </ul>
-                <button class="mt-6 w-full bg-purple-600 text-white py-2 rounded-lg">Select Plan</button>
+                <button class="mt-6 w-full button text-white py-2 rounded-lg">Select Plan</button>
             </div>
 
             <!-- Individual Plus Plan -->
@@ -59,7 +59,7 @@
                     <li>✔ Unlimited NEFT / IMPS</li>
                     <li>✔ 365 Days</li>
                 </ul>
-                <button class="mt-6 w-full bg-purple-600 text-white py-2 rounded-lg">Select Plan</button>
+                <button class="mt-6 w-full button text-white py-2 rounded-lg">Select Plan</button>
             </div>
 
             <!-- Enterprise Plus Plan -->
@@ -75,7 +75,7 @@
                     <li>✔ Unlimited NEFT / IMPS</li>
                     <li>✔ 365 Days</li>
                 </ul>
-                <button class="mt-6 w-full bg-purple-600 text-white py-2 rounded-lg">Select Plan</button>
+                <button class="mt-6 w-full button text-white py-2 rounded-lg">Select Plan</button>
             </div>
         </div>
     </div>

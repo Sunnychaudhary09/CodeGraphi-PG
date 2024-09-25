@@ -23,7 +23,7 @@
         </div>
 
         <div class="mt-4">
-            <button class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600" onclick="submitTicket()">Submit Ticket</button>
+            <button class="button text-white py-2 px-4 rounded-lg " onclick="submitTicket()">Submit Ticket</button>
         </div>
     </div>
 

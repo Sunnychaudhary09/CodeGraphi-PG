@@ -9,7 +9,7 @@
         <h2 class="text-2xl font-bold text-gray-800 mb-4">Developer Section - API Key</h2>
         
         <!-- API Key Display -->
-        <div class="bg-gray-100 p-4 rounded-lg mb-4">
+        <div class="bg-gray-100 p-4 rounded-lg mb-4 overflow-x-auto">
             <p class="font-mono text-lg text-gray-800">
                 Secret API Key:
                 <span id="apiKey" class="font-bold text-gray-900">sk_live_4jf93jf930fj3f9fj3</span>
@@ -18,10 +18,10 @@
 
         <!-- Copy & Regenerate Button -->
         <div class="flex justify-between items-center">
-            <button onclick="copyToClipboard()" class="bg-purple-600 text-white py-2 px-4 rounded-lg hover:bg-purple-700 transition duration-300">
+            <button onclick="copyToClipboard()" class="button text-white py-2 px-4 rounded-lg mx-2">
                 Copy API Key
             </button>
-            <button onclick="regenerateKey()" class="bg-red-600 text-white py-2 px-4 rounded-lg hover:bg-red-700 transition duration-300">
+            <button onclick="regenerateKey()" class="button text-white py-2 px-4 rounded-lg  mx-2">
                 Regenerate API Key
             </button>
         </div>

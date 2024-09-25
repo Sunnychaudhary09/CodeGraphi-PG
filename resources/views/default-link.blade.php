@@ -6,7 +6,7 @@
 <div class="w-full md:w-4/5 bg-gray-100 p-8 md:ml-64">
 <div class="bg-white p-6 rounded-lg shadow-lg mb-6">
             <p class="text-sm font-semibold">Hello! We're excited to welcome you aboard. Please activate your account to unlock all the features and functionalities.</p>
-            <button class="mt-4 bg-purple-600 text-white py-2 px-2 rounded-lg" onclick="goToSubscriptionPage()">Activate Now</button>
+            <button class="mt-4 button text-white py-2 px-2 rounded-lg" onclick="goToSubscriptionPage()">Activate Now</button>
         </div>
 
 <!-- Default Link Section -->
@@ -15,7 +15,7 @@
     
     <div class="flex items-center">
         <input type="text" id="defaultLink" class="w-full p-2 border border-gray-300 rounded" value="https://codegraphi.com/pay/dD7TFHFU" readonly>
-        <button class="ml-4 bg-purple-600 text-white py-2 px-4 rounded-lg" onclick="copyToClipboard()">Copy</button>
+        <button class="ml-4 button text-white py-2 px-4 rounded-lg" onclick="copyToClipboard()">Copy</button>
     </div>
     
     <!-- Social Share Buttons -->

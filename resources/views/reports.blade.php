@@ -10,7 +10,7 @@
         <!-- Transaction Report Section -->
         <div class="bg-white p-6 rounded-lg shadow-lg mb-6">
             <h2 class="text-lg font-bold mb-4 border-b border-solid border-slate-300">Generate Transaction Report</h2>
-            <button type="button" class="bg-green-500 text-white py-2 px-4 rounded-lg" onclick="generateTransactionReport()">Generate Transaction Report</button>
+            <button type="button" class="button text-white py-2 px-4 rounded-lg" onclick="generateTransactionReport()">Generate Transaction Report</button>
             <div id="transactionReportOutput" class="mt-4 hidden">
                 <h4 class="font-bold">Transaction Report:</h4>
                 <p id="transactionReportContent"></p>
@@ -20,7 +20,7 @@
         <!-- Refund Report Section -->
         <div class="bg-white p-6 rounded-lg shadow-lg mb-6">
             <h2 class="text-lg font-bold mb-4 border-b border-solid border-slate-300">Generate Refund Report</h2>
-            <button type="button" class="bg-yellow-500 text-white py-2 px-4 rounded-lg" onclick="generateRefundReport()">Generate Refund Report</button>
+            <button type="button" class="button text-white py-2 px-4 rounded-lg" onclick="generateRefundReport()">Generate Refund Report</button>
             <div id="refundReportOutput" class="mt-4 hidden">
                 <h4 class="font-bold ">Refund Report:</h4>
                 <p id="refundReportContent"></p>

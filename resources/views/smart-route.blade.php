@@ -25,7 +25,7 @@
 
                 <!-- Redirect Button -->
                 <button 
-                    class="bg-purple-600 text-white py-2 px-6 rounded-lg hover:bg-purple-700 transition duration-300"
+                    class="button text-white py-2 px-6 rounded-lg hover:bg-purple-700 transition duration-300"
                     onclick="redirectToPayout()">
                     Go to Payout Dashboard
                 </button>

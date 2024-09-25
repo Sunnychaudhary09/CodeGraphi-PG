@@ -11,6 +11,9 @@
         /* Custom styles for dropdown visibility */
         .hidden { display: none; }
         .sidebar { transition: transform 0.3s ease; }
+        .button { background-color: #020066; }
+        .button:hover{background-color: #cc0000; transition: 0.3s ease}
+       
     </style>
 </head>
 <body class="bg-gray-100">
@@ -86,22 +89,7 @@
             document.getElementById('sidebar').classList.toggle('-translate-x-full');
         });
 
-        const paymentData = {
-            today: "₹ 200.00",
-            pending: "₹ 300.00",
-            success: "₹ 500.00",
-            failed: "₹ 100.00",
-        };
-
-        function updatePaymentStatus() {
-            document.getElementById('today').innerText = paymentData.today;
-            document.getElementById('pending').innerText = paymentData.pending;
-            document.getElementById('success').innerText = paymentData.success;
-            document.getElementById('failed').innerText = paymentData.failed;
-        }
-
-        setTimeout(updatePaymentStatus, 500);
-
+       
 
         
     function goToSubscriptionPage() {

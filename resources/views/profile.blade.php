@@ -12,7 +12,7 @@
         <!-- Profile Picture -->
         <div class="mb-4 text-center">
             <img src="https://via.placeholder.com/150" alt="Profile Picture" class="w-24 h-24 rounded-full mx-auto mb-4">
-            <button class="bg-blue-500 text-white py-2 px-4 rounded-lg">Upload New Picture</button>
+            <button class="button text-white py-2 px-4 rounded-lg">Upload New Picture</button>
         </div>
 
         <!-- Personal Information Section -->
@@ -88,8 +88,8 @@
 
         <!-- Edit & Save Buttons -->
         <div class="mt-6 text-center">
-            <button id="editBtn" class="bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600" onclick="toggleEdit()">Edit Profile</button>
-            <button id="saveBtn" class="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 hidden" onclick="toggleEdit()">Save Profile</button>
+            <button id="editBtn" class="button text-white py-2 px-4 rounded-lg " onclick="toggleEdit()">Edit Profile</button>
+            <button id="saveBtn" class="button text-white py-2 px-4 rounded-lg  hidden" onclick="toggleEdit()">Save Profile</button>
         </div>
     </div>
     </div>

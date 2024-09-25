@@ -8,7 +8,7 @@
         <!-- Activation Section -->
         <div class="bg-white p-6 rounded-lg shadow-lg mb-6">
             <p class="text-sm font-semibold">Hello! We're excited to welcome you aboard. Please activate your account to unlock all the features and functionalities.</p>
-            <button class="mt-4 bg-purple-600 text-white py-2 px-2 rounded-lg" onclick="goToSubscriptionPage()">Activate Now</button>
+            <button class="mt-4 button text-white py-2 px-2 rounded-lg" onclick="goToSubscriptionPage()">Activate Now</button>
         </div>
 
         <!-- Statistics Section -->
@@ -68,6 +68,24 @@
             </div>
         </div>
     </div>
+    <script>
+         const paymentData = {
+            today: "₹ 200.00",
+            pending: "₹ 300.00",
+            success: "₹ 500.00",
+            failed: "₹ 100.00",
+        };
+
+        function updatePaymentStatus() {
+            document.getElementById('today').innerText = paymentData.today;
+            document.getElementById('pending').innerText = paymentData.pending;
+            document.getElementById('success').innerText = paymentData.success;
+            document.getElementById('failed').innerText = paymentData.failed;
+        }
+
+        setTimeout(updatePaymentStatus, 500);
+
+    </script>
 @endsection
     <!-- JavaScript to handle dropdown and mobile menu toggles -->
   

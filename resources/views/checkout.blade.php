@@ -13,7 +13,7 @@
     <p class="text-sm font-semibold">
         Hello! We're excited to welcome you aboard. Please activate your account to unlock all the features and functionalities.
     </p>
-    <button class="mt-4 bg-purple-600 text-white py-2 px-4 rounded-lg" onclick="goToSubscriptionPage()">Activate Now</button>
+    <button class="mt-4 text-white py-2 px-4 rounded-lg button" onclick="goToSubscriptionPage()">Activate Now</button>
 </div>
 
 <!-- User Input Section -->
@@ -65,7 +65,7 @@
 
     <!-- Update Button -->
     <div class="mt-6">
-        <button class="bg-purple-600 text-white py-2 px-4 rounded-lg">Update</button>
+        <button class="button text-white py-2 px-4 rounded-lg">Update</button>
     </div>
 
     <!-- Information Section -->
@@ -82,7 +82,7 @@
         <label for="message" class="block mb-2">Message</label>
         <textarea class="w-full p-2 border border-gray-300 rounded" id="message" placeholder="Enter message"></textarea>
         <div class="mt-4">
-            <button class="bg-purple-600 text-white py-2 px-4 rounded-lg">Update</button>
+            <button class="button text-white py-2 px-4 rounded-lg">Update</button>
         </div>
 
         <!-- Information Text -->
@@ -112,7 +112,7 @@
 
         <!-- Update Button -->
         <div class="mt-4">
-            <button class="bg-purple-600 text-white py-2 px-4 rounded-lg">Update</button>
+            <button class="button text-white py-2 px-4 rounded-lg">Update</button>
         </div>
         <p class="mt-2 text-gray-500">
         The advertisement image you set will be visible to your customers on the checkout page</p>
