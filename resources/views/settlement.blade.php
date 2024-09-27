@@ -63,18 +63,22 @@
     
         // Function to process individual settlement
         function processSettlement(transactionId, amount, date, utr) {
+            
             // Check if the transaction ID is already settled
             if (settledTransactions.has(transactionId)) {
                 alert("Transaction already settled!");
                 return; // Exit the function if already settled
             }
-    
+           
             // If not settled, process the settlement
             const historyEntry = `Transaction ID: ${transactionId}, Amount: ${amount}, Date: ${date}, UTR: ${utr}`;
             settlementHistory.push(historyEntry);
+
+            
     
             // Mark the transaction as settled by adding its ID to the set
             settledTransactions.add(transactionId);
+
     
             // Update the settlement history display
             updateSettlementHistory();
@@ -125,7 +129,7 @@
                     <td class="border px-4 py-2">${transaction.date}</td>
                     <td class="border px-4 py-2">${transaction.utr}</td>
                     <td class="border px-4 py-2">
-                        <button class="button text-white py-1 px-2 rounded-lg" onclick="processSettlement('${transaction.id}', ${transaction.amount}, '${transaction.date}', '${transaction.utr}')">Settle</button>
+                        <button class="button text-white py-1 px-2 rounded-lg" onclick="processSettlement('${transaction.id}', ${transaction.amount},'${transaction.date}', '${transaction.utr}')">Settle</button>
                     </td>
                 `;
                 tableBody.appendChild(row);

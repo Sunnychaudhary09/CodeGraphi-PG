@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'CodeGraphi Free Payment Gateway')</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="shortcut icon" href="img/fav.ico" type="image/x-icon">
@@ -19,7 +21,7 @@
 <body class="bg-gray-100">
     <!-- Navbar for mobile -->
     <div class="md:hidden bg-white shadow-lg p-2  sticky w-full z-10 flex justify-between items-center">
-        <div class=""><img src="img/codegraphi-logo.png" alt="logo" width="180px" height="40px"></div>
+        <div class=""><img src="img/paysays-logo.png" alt="logo" width="180px" height="40px"></div>
         <button id="mobile-menu-toggle" class="text-gray-700">
             <i class="fas fa-bars"></i>
         </button>
@@ -27,7 +29,7 @@
 
     <!-- Sidebar -->
     <div id="sidebar" class="sidebar fixed inset-y-0 left-0 w-64 bg-white shadow-lg p-3 transform -translate-x-full md:translate-x-0 md:block">
-        <div class="mb-2 pb-2 border-b border-solid border-slate-300"><img src="img/codegraphi-logo.png" alt="logo" width="160px" height="50px"></div>
+        <div class="mb-2 pb-2 border-b border-solid border-slate-300"><img src="img/paysays-logo.png" alt="logo" width="160px" height="50px"></div>
         <nav class="flex flex-col space-y-3">
             <a href="/dashboard" class="text-base font-medium text-gray-700 hover:text-purple-600 border-b border-solid border-slate-300 pb-2"><i class="fas fa-tachometer-alt mr-4"></i> Dashboard</a>
             <a href="/transaction" class="text-base font-medium text-gray-700 hover:text-purple-600 border-b border-solid border-slate-300 pb-2"><i class="fas fa-wallet mr-4"></i> Transactions</a>
@@ -79,10 +81,10 @@
             document.getElementById('payment-dropdown').classList.toggle('hidden');
         });
 
-        // Toggle Smart Route dropdown
-        document.getElementById('toggle-smart-route').addEventListener('click', function() {
-            document.getElementById('smart-route-dropdown').classList.toggle('hidden');
-        });
+        // // Toggle Smart Route dropdown
+        // document.getElementById('toggle-smart-route').addEventListener('click', function() {
+        //     document.getElementById('smart-route-dropdown').classList.toggle('hidden');
+        // });
 
         // Toggle mobile menu
         document.getElementById('mobile-menu-toggle').addEventListener('click', function() {
